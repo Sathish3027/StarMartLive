@@ -1,0 +1,57 @@
+
+.home-container{
+    margin:0;
+    padding:0;
+}
+
+
+.home-heading{
+    margin-left:13%;
+}
+
+.home-heading h1{
+    margin-bottom:10px ;
+    color:orange;
+}
+
+.home-heading h4{
+    color:rgb(184, 157, 109);
+}
+
+.home-para{
+    color: rgb(204, 160, 160);
+    margin:20px 40px;
+    text-align: justify;
+}
+
+.home-btn{
+    margin-left:400px;
+    color:#fff;
+    background-color: orangered;
+    padding:5px;
+    border-radius: 10px;
+    border:3px solid skyblue;
+    width:200px;
+    margin-bottom: 20px;
+    
+}
+
+.home-btn:hover{
+    background-color: skyblue;
+    border: 3px solid orangered;
+}
+
+
+
+@media only screen and (max-width:1080px){
+	
+
+.home-btn{
+    margin-left:80px;
+    
+}
+	.home-heading{
+        margin-top: 20px;
+    }
+}
+

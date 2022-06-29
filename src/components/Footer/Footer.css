@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,700&display=swap');
+body {
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+}
+
+.footer {
+    background-color: rgba(117, 186, 192, 0.8);
+    padding: 70px 0px;
+    margin: auto;
+    padding-left: 130px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    background-color: #f76009;
+    width: 90px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+    color: rgb(241, 233, 233);
+    transition: all 0.4s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 5px;
+    color: #fff;
+}
+
+.footer-contact p,.footer-contact h3{
+    color: rgb(241, 233, 233);
+    transition: all 0.4s ease;
+}
+
+.footer-contact p:hover,.footer-contact h3:hover{
+    padding-left: 5px;
+    color: #fff;
+}
+
+.footer-logo img{ 
+    height:80px;
+    width:270px;
+    margin-top:8px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.footer-copyright{
+    
+    width:100%;
+}
+
+.footer-copyright-content{
+    color:#ddd;
+    background-color: #2fb2c9;
+    text-align: center;
+    height:50px;
+    padding-top:15px;
+}
+
+
+
+@media screen and (max-width:1080px) {
+    .footer {
+        padding-left: 70px;
+    }
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footer-logo img{
+        width:190px;
+    }
+}

@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo h2{ 
+    font-size: 40px;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.871);
+    margin: 0px !important;
+    padding-bottom:0px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:5px;
+    left:40px;
+}
+
+.logo h2:hover{
+    color:#fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color:rgb(230, 70, 13);
+    color: #fff;
+    z-index: 4;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    width:75%;
+    margin-top:2px;
+}
+
+.homes,.products,.opportunity,.legal,.contact,.about,.sign{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.871);
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.nav-list,.nav-list-1{
+    text-decoration: none !important;
+     transition: 1.2s;
+     margin-bottom: 8px;
+     transition:1.5s;
+     
+}
+
+
+
+.nav-list:hover,.nav-list-1:hover{
+    font-weight: 400;
+    color:#fff;
+   
+}
+
+
+
+
+
+.mobile-menu-icon{
+    display:none;
+}
+
+.nav-links .homes::after,.opportunity::after,.legal::after,.contact::after,.about::after{
+	content:" ";
+	width:0%;
+	height:2px;
+	background:#fff;
+	display:block;
+	margin:auto;
+	transition:0.5s;
+    text-decoration:none !important ;
+}
+
+
+
+.nav-links .homes:hover::after,.opportunity:hover::after,.legal:hover::after,.contact:hover::after,.about:hover::after{
+	width:100%;
+}
+
+.products{
+    transition: 0.5s;
+    border: none;
+    background: none;
+    padding-right: 40px !important;
+    margin-right: 0 !important;
+}
+
+.legal,.contact{
+    padding-right: 34px !important;
+    margin-right: 0 !important; 
+    padding-left: 17px ;
+    margin-left: 0 !important;
+}
+
+.legal{
+    padding-left:15px !important
+}
+
+.products:hover{
+    background: none !important;
+    color:#fff;
+    border:none !important;
+}
+  
+.prod-hover {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .products-page {
+    display: none;
+    position: absolute;
+    background-color:rgb(194, 219, 229);
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin:0;
+  }
+  
+  .products-page a {
+    color:orangered;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+margin:0;
+transition:1.5s;
+  }
+  
+.products-page a:hover {
+    background-color:orangered;
+    color:#fff;
+}
+  
+  .prod-hover:hover .products-page {
+      display: block;
+      margin:0;
+    }
+  
+ 
+
+
+
+@media screen and (max-width:1080px){
+    .log{
+        display: flex;
+        position: absolute;
+        top:15px;
+        left:35px;
+        }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: skyblue;
+        left:0;
+        top:75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        overflow:visible;
+        border:none;
+        transition: 0.5s;
+        z-index:-4;
+    }
+    .nav-list:hover,.nav-list-1:hover{
+        background-color:none;
+        border:none;
+    }
+    .nav-links-mobile:hover{
+        font-weight: 600;
+    }
+    .homes,.products,.opportunity,.legal,.contact,.about,.sign{
+        color: #fff;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+        background: none;
+    }
+    .sign{
+        border: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position:absolute;
+        top:8px;
+        right:25px;
+        font-size: 30px;
+        color: #fff;
+        background-color:rgb(230, 70, 13);
+        border: none;
+        outline: none;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+.nav-list,.nav-list-1{
+        background-color:none !important;
+        border:none !important;
+       color:#fff;
+    }
+    
+    .nav-list-1:hover{
+        margin-bottom: 8px;
+    }
+ 
+    
+}
+
